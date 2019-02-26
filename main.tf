@@ -258,6 +258,7 @@ module "acm" {
   zone_id     = "${data.aws_route53_zone.this.id}"
 
   tags = "${local.tags}"
+  validate_certificate = "${var.validate_certificate}"
 }
 
 ###################
